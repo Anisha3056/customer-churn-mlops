@@ -1,0 +1,14 @@
+artifact_uri: file:c:\Users\HP\OneDrive\Documents\customer-churn-mlops/mlruns/439024116829602353/5d58a1821d8c4ee5ad782a6c52a6d085/artifacts
+end_time: 1777663244285
+entry_point_name: ''
+experiment_id: '439024116829602353'
+lifecycle_stage: active
+run_id: 5d58a1821d8c4ee5ad782a6c52a6d085
+run_name: aged-shad-586
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777663235440
+status: 3
+tags: []
+user_id: Anisha Tenali

@@ -1,0 +1,14 @@
+artifact_uri: file:c:\Users\HP\OneDrive\Documents\customer-churn-mlops/mlruns/439024116829602353/8b0dbbeda2f5494bb79227cde505cfa7/artifacts
+end_time: 1777786384684
+entry_point_name: ''
+experiment_id: '439024116829602353'
+lifecycle_stage: active
+run_id: 8b0dbbeda2f5494bb79227cde505cfa7
+run_name: abrasive-hog-0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777786377515
+status: 3
+tags: []
+user_id: Anisha Tenali

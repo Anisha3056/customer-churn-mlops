@@ -1,0 +1,14 @@
+artifact_uri: file:c:\Users\HP\OneDrive\Documents\customer-churn-mlops/mlruns/439024116829602353/2a23539ef10348f1b5c8b149f8d1956a/artifacts
+end_time: 1777664029705
+entry_point_name: ''
+experiment_id: '439024116829602353'
+lifecycle_stage: active
+run_id: 2a23539ef10348f1b5c8b149f8d1956a
+run_name: puzzled-tern-526
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777664021266
+status: 3
+tags: []
+user_id: Anisha Tenali

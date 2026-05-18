@@ -1,0 +1,14 @@
+artifact_uri: file:c:\Users\HP\OneDrive\Documents\customer-churn-mlops/mlruns/439024116829602353/b74956332df045eb8c1d50e10743e8a7/artifacts
+end_time: 1777702442158
+entry_point_name: ''
+experiment_id: '439024116829602353'
+lifecycle_stage: active
+run_id: b74956332df045eb8c1d50e10743e8a7
+run_name: bouncy-frog-393
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777702437997
+status: 3
+tags: []
+user_id: Anisha Tenali

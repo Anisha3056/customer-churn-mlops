@@ -1,0 +1,14 @@
+artifact_uri: file:c:\Users\HP\OneDrive\Documents\customer-churn-mlops/mlruns/439024116829602353/b8c0ab8083d6474882218720d60f85aa/artifacts
+end_time: 1777702428790
+entry_point_name: ''
+experiment_id: '439024116829602353'
+lifecycle_stage: active
+run_id: b8c0ab8083d6474882218720d60f85aa
+run_name: sneaky-trout-59
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777702423351
+status: 3
+tags: []
+user_id: Anisha Tenali

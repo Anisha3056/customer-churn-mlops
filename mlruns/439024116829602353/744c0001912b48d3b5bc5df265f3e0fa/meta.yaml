@@ -1,0 +1,14 @@
+artifact_uri: file:c:\Users\HP\OneDrive\Documents\customer-churn-mlops/mlruns/439024116829602353/744c0001912b48d3b5bc5df265f3e0fa/artifacts
+end_time: 1777786426824
+entry_point_name: ''
+experiment_id: '439024116829602353'
+lifecycle_stage: active
+run_id: 744c0001912b48d3b5bc5df265f3e0fa
+run_name: persistent-hound-939
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777786410389
+status: 3
+tags: []
+user_id: Anisha Tenali

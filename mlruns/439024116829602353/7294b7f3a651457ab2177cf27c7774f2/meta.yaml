@@ -1,0 +1,15 @@
+artifact_uri: file:c:\Users\HP\OneDrive\Documents\customer-churn-mlops/mlruns/439024116829602353/7294b7f3a651457ab2177cf27c7774f2/artifacts
+deleted_time: 1777663368154
+end_time: 1777663146061
+entry_point_name: ''
+experiment_id: '439024116829602353'
+lifecycle_stage: deleted
+run_id: 7294b7f3a651457ab2177cf27c7774f2
+run_name: abrasive-cub-510
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777662924220
+status: 3
+tags: []
+user_id: Anisha Tenali

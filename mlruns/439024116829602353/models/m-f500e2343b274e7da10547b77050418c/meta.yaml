@@ -1,0 +1,10 @@
+artifact_location: file:c:\Users\HP\OneDrive\Documents\customer-churn-mlops/mlruns/439024116829602353/models/m-f500e2343b274e7da10547b77050418c/artifacts
+creation_timestamp: 1777664021894
+experiment_id: '439024116829602353'
+last_updated_timestamp: 1777664029693
+model_id: m-f500e2343b274e7da10547b77050418c
+model_type: null
+name: model
+source_run_id: 2a23539ef10348f1b5c8b149f8d1956a
+status: 2
+status_message: null

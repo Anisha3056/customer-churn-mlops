@@ -1,0 +1,14 @@
+artifact_uri: file:c:\Users\HP\OneDrive\Documents\customer-churn-mlops/mlruns/439024116829602353/b7672eef79344e2c9cdb48bae6d6901d/artifacts
+end_time: 1777664004875
+entry_point_name: ''
+experiment_id: '439024116829602353'
+lifecycle_stage: active
+run_id: b7672eef79344e2c9cdb48bae6d6901d
+run_name: placid-crab-703
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777663996039
+status: 3
+tags: []
+user_id: Anisha Tenali

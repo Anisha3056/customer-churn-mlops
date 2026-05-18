@@ -1,0 +1,14 @@
+artifact_uri: file:c:\Users\HP\OneDrive\Documents\customer-churn-mlops/mlruns/439024116829602353/889898f83e574b4caf0d93aebc0779c9/artifacts
+end_time: 1777786394209
+entry_point_name: ''
+experiment_id: '439024116829602353'
+lifecycle_stage: active
+run_id: 889898f83e574b4caf0d93aebc0779c9
+run_name: suave-newt-296
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777786384728
+status: 3
+tags: []
+user_id: Anisha Tenali

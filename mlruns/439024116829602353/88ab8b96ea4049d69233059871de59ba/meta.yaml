@@ -1,0 +1,14 @@
+artifact_uri: file:c:\Users\HP\OneDrive\Documents\customer-churn-mlops/mlruns/439024116829602353/88ab8b96ea4049d69233059871de59ba/artifacts
+end_time: 1777663278091
+entry_point_name: ''
+experiment_id: '439024116829602353'
+lifecycle_stage: active
+run_id: 88ab8b96ea4049d69233059871de59ba
+run_name: invincible-sloth-763
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777663269421
+status: 3
+tags: []
+user_id: Anisha Tenali

@@ -1,0 +1,14 @@
+artifact_uri: file:c:\Users\HP\OneDrive\Documents\customer-churn-mlops/mlruns/439024116829602353/3b664573f60b44828c00b97f12d3a0f7/artifacts
+end_time: 1777663155039
+entry_point_name: ''
+experiment_id: '439024116829602353'
+lifecycle_stage: active
+run_id: 3b664573f60b44828c00b97f12d3a0f7
+run_name: bold-hare-449
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777663146073
+status: 3
+tags: []
+user_id: Anisha Tenali

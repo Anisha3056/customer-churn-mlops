@@ -1,0 +1,14 @@
+artifact_uri: file:c:\Users\HP\OneDrive\Documents\customer-churn-mlops/mlruns/439024116829602353/0b3ec774318246919c1cd2d2101da73f/artifacts
+end_time: 1777664021257
+entry_point_name: ''
+experiment_id: '439024116829602353'
+lifecycle_stage: active
+run_id: 0b3ec774318246919c1cd2d2101da73f
+run_name: chill-stoat-826
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777664014216
+status: 3
+tags: []
+user_id: Anisha Tenali

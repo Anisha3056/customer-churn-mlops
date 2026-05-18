@@ -1,0 +1,8 @@
+artifact_location: file:c:\Users\HP\OneDrive\Documents\customer-churn-mlops/mlruns/439024116829602353
+creation_time: 1777662608905
+experiment_id: '439024116829602353'
+last_update_time: 1777662608905
+lifecycle_stage: active
+name: customer-churn-mlops
+trace_location: null
+workspace: default

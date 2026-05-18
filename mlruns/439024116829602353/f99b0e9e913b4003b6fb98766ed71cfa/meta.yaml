@@ -1,0 +1,14 @@
+artifact_uri: file:c:\Users\HP\OneDrive\Documents\customer-churn-mlops/mlruns/439024116829602353/f99b0e9e913b4003b6fb98766ed71cfa/artifacts
+end_time: 1777786401929
+entry_point_name: ''
+experiment_id: '439024116829602353'
+lifecycle_stage: active
+run_id: f99b0e9e913b4003b6fb98766ed71cfa
+run_name: worried-rook-600
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777786394257
+status: 3
+tags: []
+user_id: Anisha Tenali

@@ -1,0 +1,14 @@
+artifact_uri: file:c:\Users\HP\OneDrive\Documents\customer-churn-mlops/mlruns/439024116829602353/ce50851b1fba4c95bd5eb47836565a0d/artifacts
+end_time: 1777702437992
+entry_point_name: ''
+experiment_id: '439024116829602353'
+lifecycle_stage: active
+run_id: ce50851b1fba4c95bd5eb47836565a0d
+run_name: redolent-rat-128
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777702433809
+status: 3
+tags: []
+user_id: Anisha Tenali

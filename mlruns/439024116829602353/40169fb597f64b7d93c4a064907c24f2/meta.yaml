@@ -1,0 +1,14 @@
+artifact_uri: file:c:\Users\HP\OneDrive\Documents\customer-churn-mlops/mlruns/439024116829602353/40169fb597f64b7d93c4a064907c24f2/artifacts
+end_time: 1777785001735
+entry_point_name: ''
+experiment_id: '439024116829602353'
+lifecycle_stage: active
+run_id: 40169fb597f64b7d93c4a064907c24f2
+run_name: dazzling-steed-463
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777784994093
+status: 3
+tags: []
+user_id: Anisha Tenali

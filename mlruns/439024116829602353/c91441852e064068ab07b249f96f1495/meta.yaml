@@ -1,0 +1,14 @@
+artifact_uri: file:c:\Users\HP\OneDrive\Documents\customer-churn-mlops/mlruns/439024116829602353/c91441852e064068ab07b249f96f1495/artifacts
+end_time: 1777784987982
+entry_point_name: ''
+experiment_id: '439024116829602353'
+lifecycle_stage: active
+run_id: c91441852e064068ab07b249f96f1495
+run_name: trusting-ape-442
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777784982249
+status: 3
+tags: []
+user_id: Anisha Tenali
