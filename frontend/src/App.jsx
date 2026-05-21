@@ -138,7 +138,7 @@ return(
 
 <h1>
 
-Customer Churn Predictor 🌱
+Customer Churn Predictor 
 
 </h1>
 
