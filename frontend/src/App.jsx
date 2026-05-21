@@ -1,11 +1,145 @@
-return (
+import React, { useState } from "react";
+import "./App.css";
+
+const ChurnPredictor = () => {
+
+const [formData,setFormData]=useState({
+
+tenure:"",
+MonthlyCharges:"",
+TotalCharges:"",
+Contract:"",
+InternetService:"",
+
+Dependents:"No",
+StreamingTV:"No",
+TechSupport:"No",
+PaymentMethod:"Electronic check"
+
+});
+
+
+const [predictionResult,setPredictionResult]=
+useState(null);
+
+const [isLoading,setIsLoading]=
+useState(false);
+
+
+
+const handleChange=(e)=>{
+
+const {name,value}=e.target;
+
+setFormData((prev)=>({
+
+...prev,
+
+[name]:value
+
+}));
+
+};
+
+
+
+const handleSubmit=async(e)=>{
+
+e.preventDefault();
+
+setIsLoading(true);
+
+setPredictionResult(null);
+
+try{
+
+const response=
+await fetch(
+
+"https://customer-churn-api-mngl.onrender.com/predict",
+
+{
+
+method:"POST",
+
+headers:{
+"Content-Type":"application/json"
+},
+
+body:JSON.stringify(formData)
+
+}
+
+);
+
+const data=
+await response.json();
+
+
+setPredictionResult(
+
+data.churn_prediction===1
+? "Churn"
+: "Stay"
+
+);
+
+}
+
+catch(error){
+
+console.log(
+"FULL ERROR:",
+error
+);
+
+alert(
+"Prediction failed"
+);
+
+}
+
+setIsLoading(false);
+
+};
+
+
+
+const Label=({
+text,
+required=false
+})=>(
+
+<label>
+
+{text}
+
+{required&&(
+
+<span className="required">
+
+*
+
+</span>
+
+)}
+
+</label>
+
+);
+
+
+
+return(
 
 <div className="main-container">
 
 <div className="header">
 
 <h1>
+
 Customer Churn Predictor 🌱
+
 </h1>
 
 <p>
@@ -15,6 +149,8 @@ Enter customer details to predict whether the customer is likely to stay or chur
 </p>
 
 </div>
+
+
 
 <div className="card">
 
@@ -27,90 +163,118 @@ Customer Information
 
 <form onSubmit={handleSubmit}>
 
+
 <div className="form-grid">
 
 
 <div className="field">
 
-<label>
-
-Tenure
-
-<span className="required">*</span>
-
-</label>
+<Label
+text="Tenure (Months)"
+required
+/>
 
 <input
+
 type="number"
+
 name="tenure"
+
 value={formData.tenure}
+
 onChange={handleChange}
+
+placeholder="e.g. 12"
+
 required
+
 />
 
 </div>
 
 
 
+
+
 <div className="field">
 
-<label>
-
-Monthly Charges
-
-<span className="required">*</span>
-
-</label>
+<Label
+text="Monthly Charges"
+required
+/>
 
 <input
+
 type="number"
+
 name="MonthlyCharges"
+
 value={formData.MonthlyCharges}
+
 onChange={handleChange}
+
+placeholder="e.g. 60"
+
 required
+
 />
 
 </div>
 
 
+
+
 <div className="field">
 
-<label>
-
-Total Charges
-
-<span className="required">*</span>
-
-</label>
+<Label
+text="Total Charges"
+required
+/>
 
 <input
+
 type="number"
+
 name="TotalCharges"
+
 value={formData.TotalCharges}
+
 onChange={handleChange}
+
+placeholder="e.g. 720"
+
 required
+
 />
 
 </div>
 
 
 
+
+
 <div className="field">
 
-<label>
-
-Contract Type
-
-<span className="required">*</span>
-
-</label>
+<Label
+text="Contract Type"
+required
+/>
 
 <select
+
 name="Contract"
+
 value={formData.Contract}
+
 onChange={handleChange}
+
 required
+
 >
+
+<option value="">
+Select Contract
+</option>
 
 <option>
 Month-to-month
@@ -129,22 +293,30 @@ Two year
 </div>
 
 
+
+
 <div className="field">
 
-<label>
-
-Internet Service
-
-<span className="required">*</span>
-
-</label>
+<Label
+text="Internet Service"
+required
+/>
 
 <select
+
 name="InternetService"
+
 value={formData.InternetService}
+
 onChange={handleChange}
+
 required
+
 >
+
+<option value="">
+Select Service
+</option>
 
 <option>
 Fiber optic
@@ -162,7 +334,9 @@ No
 
 </div>
 
+
 </div>
+
 
 
 <div className="optional-section">
@@ -180,13 +354,14 @@ Additional Information
 </h3>
 
 
+
 <div className="form-grid">
+
+
 
 <div className="field">
 
-<label>
-Dependents
-</label>
+<Label text="Dependents"/>
 
 <select
 name="Dependents"
@@ -203,11 +378,11 @@ onChange={handleChange}
 </div>
 
 
+
+
 <div className="field">
 
-<label>
-Streaming TV
-</label>
+<Label text="Streaming TV"/>
 
 <select
 name="StreamingTV"
@@ -224,11 +399,11 @@ onChange={handleChange}
 </div>
 
 
+
+
 <div className="field">
 
-<label>
-Tech Support
-</label>
+<Label text="Tech Support"/>
 
 <select
 name="TechSupport"
@@ -245,41 +420,72 @@ onChange={handleChange}
 </div>
 
 
+
+
 <div className="field">
 
-<label>
-Payment Method
-</label>
+<Label text="Payment Method"/>
 
 <select
+
 name="PaymentMethod"
+
 value={formData.PaymentMethod}
+
 onChange={handleChange}
+
 >
 
-<option>Electronic check</option>
+<option>
 
-<option>Credit card</option>
+Electronic check
 
-<option>Mailed check</option>
+</option>
+
+<option>
+
+Credit card (automatic)
+
+</option>
+
+<option>
+
+Mailed check
+
+</option>
 
 </select>
 
 </div>
 
+
 </div>
 
 </div>
+
 
 
 <button
+
 className="predict-btn"
+
 disabled={isLoading}
+
 >
 
-{isLoading
-? "⏳ Analyzing Customer Data..."
-: "🔮 Predict Churn"}
+{
+
+isLoading
+
+?
+
+"⏳ Analyzing Customer Data..."
+
+:
+
+"🔮 Predict Churn"
+
+}
 
 </button>
 
@@ -291,26 +497,41 @@ First prediction may take a few seconds while server wakes up ☁️
 </p>
 
 
-{predictionResult && (
 
-<div className={`result ${
+{
+
+predictionResult && (
+
+<div
+
+className={`result ${
 predictionResult==="Stay"
 ? "stay"
 : "churn"
-}`}>
+}`}
+
+>
 
 {
+
 predictionResult==="Stay"
 
-? "🎉 Customer likely to STAY"
+?
 
-: "⚠️ Customer likely to CHURN"
+"🎉 Customer likely to STAY"
+
+:
+
+"⚠️ Customer likely to CHURN"
 
 }
 
 </div>
 
-)}
+)
+
+}
+
 
 </form>
 
@@ -319,3 +540,7 @@ predictionResult==="Stay"
 </div>
 
 )
+
+};
+
+export default ChurnPredictor;
