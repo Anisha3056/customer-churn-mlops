@@ -48,11 +48,10 @@ def predict(data: CustomerData):
 
         df = pd.DataFrame([input_dict])
         num_cols = joblib.load("models/num_cols.pkl")
-        df = pd.get_dummies(df, drop_first=True)
+        df = pd.get_dummies(df)
         df = df.reindex(columns=columns, fill_value=0)
         df[num_cols] = scaler.transform(df[num_cols])
         prediction = model.predict(df.values)[0]
-
         return {"churn_prediction": int(prediction)}
 
     except Exception as e:
